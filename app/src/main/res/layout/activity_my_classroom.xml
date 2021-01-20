@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:background="@drawable/class_try"
+    tools:context=".MyClassroomActivity">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="My Classroom"
+        android:fontFamily="@font/nunito_sans_semibold"
+        android:textSize="24sp"
+        android:textColor="#0467B5"
+        android:gravity="center_horizontal"
+        android:layout_margin="20dp"
+        android:id="@+id/heading_label"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/permanent_marker"
+        android:gravity="center_horizontal"
+        android:textColor="@android:color/white"
+        android:padding="10dp"
+        android:layout_below="@+id/heading_label"
+        android:text="I consider the world, this Earth, to be like a school, and our life the classrooms."
+        android:textSize="18sp"
+        android:id="@+id/quote"/>
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/btnBack"
+        android:layout_marginTop="15dp"
+        android:layout_marginStart="15dp"
+        android:background="@drawable/back_white2"
+        android:backgroundTint="#0467B5"
+        />
+
+    <!--<ImageView
+        android:id="@+id/appbar1"
+        android:layout_width="match_parent"
+        android:layout_height="230dp"
+        android:background="@drawable/header4" />-->
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_below="@+id/quote">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+
+            android:layout_weight="2"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cardClassInfo"
+                    android:layout_width="170dp"
+                    android:layout_height="200dp"
+                    android:layout_margin="20dp"
+                    android:clickable="true"
+                    app:cardElevation="5dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <com.airbnb.lottie.LottieAnimationView
+
+                            android:layout_width="120dp"
+                            android:layout_height="120dp"
+                            android:layout_gravity="center"
+                            android:scrollbarSize="40dp"
+                            app:lottie_autoPlay="true"
+                            app:lottie_fileName="info.json"
+                            app:lottie_loop="true" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Classroom Info"
+                            android:fontFamily="@font/nunito_sans_semibold"
+                            android:textColor="@color/colorPrimary"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cardTeachers"
+                    android:layout_width="170dp"
+                    android:layout_height="200dp"
+                    android:layout_margin="20dp"
+                    android:clickable="true"
+                    app:cardElevation="5dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <com.airbnb.lottie.LottieAnimationView
+
+                            android:layout_width="120dp"
+                            android:layout_height="120dp"
+                            android:layout_gravity="center"
+                            android:scrollbarSize="40dp"
+                            app:lottie_autoPlay="true"
+                            app:lottie_fileName="teacher.json"
+                            app:lottie_loop="true" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Teachers &amp; courses"
+                            android:fontFamily="@font/nunito_sans_semibold"
+                            android:textColor="@color/colorPrimary"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_margin="10dp"
+
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cardClassmates"
+                    android:layout_width="170dp"
+                    android:layout_height="200dp"
+                    android:layout_margin="20dp"
+                    android:clickable="true"
+                    app:cardElevation="5dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <com.airbnb.lottie.LottieAnimationView
+
+                            android:layout_width="120dp"
+                            android:layout_height="120dp"
+                            android:layout_gravity="center"
+                            android:scrollbarSize="40dp"
+                            app:lottie_autoPlay="true"
+                            app:lottie_fileName="classmates.json"
+                            app:lottie_loop="true" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="classmates"
+                            android:fontFamily="@font/nunito_sans_semibold"
+                            android:textColor="@color/colorPrimary"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cardLeave"
+                    android:layout_width="170dp"
+                    android:layout_height="200dp"
+                    android:layout_margin="20dp"
+                    android:clickable="true"
+                    app:cardElevation="5dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <com.airbnb.lottie.LottieAnimationView
+                            android:layout_width="120dp"
+                            android:layout_height="120dp"
+                            android:layout_gravity="center"
+                            android:scrollbarSize="40dp"
+                            app:lottie_autoPlay="true"
+                            app:lottie_fileName="leave.json"
+                            app:lottie_loop="true" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Leave classroom"
+                            android:fontFamily="@font/nunito_sans_semibold"
+                            android:textColor="@color/colorPrimary"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+    </RelativeLayout>
+
+</androidx.core.widget.NestedScrollView>
